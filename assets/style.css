@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --bg: #0e1013;
+  --surface: #1b1f24;
+  --surface-raised: #23282f;
+  --text-primary: #f1efea;
+  --text-secondary: #9aa1ac;
+  --accent: #47c9b0;
+  --accent-dim: #2f8577;
+  --focus-ring: #ffb454;
+  --border: #2a2f36;
+  --radius: 10px;
+  --max-width: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100vh;
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  margin: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+
+/* ---------- Layout shell ---------- */
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 40px 80px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero .kicker {
+  font-size: 15px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  max-width: 14ch;
+}
+
+.hero p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  max-width: 60ch;
+}
+
+/* Setup steps */
+
+.setup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.setup-step {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.setup-step .step-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.setup-step p {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.setup-step code {
+  display: inline-block;
+  margin-top: 8px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: var(--accent);
+  word-break: break-all;
+}
+
+/* ---------- Category rows ---------- */
+
+.category {
+  margin-bottom: 48px;
+}
+
+.category h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ---------- App tile ---------- */
+
+.tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.tile-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--surface-raised);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--accent);
+  overflow: hidden;
+}
+
+.tile-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tile .desc {
+  color: var(--text-secondary);
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.tile .meta {
+  font-size: 13px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 10px;
+}
+
+.tile .download-btn {
+  margin-top: 4px;
+  background: var(--accent-dim);
+  color: #06120f;
+  font-weight: 600;
+  font-size: 15px;
+  text-align: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.tile .download-btn span {
+  color: #eafff9;
+}
+
+/* Remote / keyboard focus state — the important one on a TV */
+.tile:focus-within,
+.tile.is-focused {
+  transform: scale(1.045);
+  border-color: var(--focus-ring);
+  background: var(--surface-raised);
+  z-index: 2;
+}
+
+.tile .download-btn:focus,
+.tile .download-btn:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Remove default mouse-only outline noise, keep it for keyboard/remote */
+.tile .download-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ---------- Empty state ---------- */
+
+.empty-state {
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  margin-top: 60px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  .page { padding: 32px 20px 60px; }
+  .setup { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+}
