@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App Store</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <span class="kicker">Private app hub</span>
+      <h1>Grab your apps here.</h1>
+      <p>
+        A small, direct list of APKs you can install on any Fire TV Stick,
+        Onn box, or other Android TV device using the Downloader app.
+        No accounts, no store review, just the files.
+      </p>
+
+      <div class="setup">
+        <div class="setup-step">
+          <div class="step-label">1. Open Downloader</div>
+          <p>On your TV box, launch the Downloader app from the home screen or app drawer.</p>
+        </div>
+        <div class="setup-step">
+          <div class="step-label">2. Enter this address</div>
+          <p>
+            Type this page's URL into the Downloader address bar.
+            <code>your-username.github.io/your-repo</code>
+          </p>
+        </div>
+        <div class="setup-step">
+          <div class="step-label">3. Pick an app &amp; install</div>
+          <p>Use the remote to select "Download APK," then tap Install when it finishes.</p>
+        </div>
+      </div>
+    </header>
+
+    <main id="app-sections">
+      <!-- Populated by assets/app.js from data/apps.json -->
+    </main>
+
+    <footer class="footer">
+      Only install apps from sources you trust. Update the list by editing
+      <code>data/apps.json</code> in this repository.
+    </footer>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
