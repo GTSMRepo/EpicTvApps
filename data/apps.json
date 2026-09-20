@@ -1,1 +1,11 @@
-
+[
+  {
+    "name": "Projectivy Launcher",
+    "description": "Premium Unlocked",
+    "version": "4.71",
+    "size": "9.57 MB",
+    "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0807.webp?raw=true",
+    "apk": "https://github.com/GTSMRepo/EpicTvApps/releases/download/hmm/projectivy-launcher.apk",
+    "category": "Utilities"
+  }
+]
