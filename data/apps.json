@@ -1,7 +1,7 @@
 [
   {
     "name": "Projectivy Launcher",
-    "description": "Premium Unlocked",
+    "description": "Premium Unlocked | Use Home on Fire for Fire tv/sticks.",
     "version": "4.71",
     "size": "9.57 MB",
     "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0807.webp?raw=true",
@@ -9,21 +9,39 @@
     "category": "Utilities"
   },
   {
+    "name": "Home on Fire",
+    "description": "Small Android app for Fire TV that redirects the remote's ⌂ Home button to a launcher of your choice | Optionally also launches that target automatically at device boot, so the Fire TV wakes up on your launcher instead of the Amazon home screen.",
+    "version": "1.5.1",
+    "size": "187 KB",
+    "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0805.jpeg?raw=true",
+    "apk": "https://github.com/toolicious/home-on-fire/releases/download/v1.5.1/home-on-fire.apk",
+    "category": "Utilities"
+  },
+  {
     "name": "Stremio",
-    "description": "Freedom To Stream. Guide code for downloader: 5428850",
+    "description": "Freedom To Stream | Guide code for downloader 5428850",
     "version": "1.10.4",
     "size": "87.4 MB",
     "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0806.png?raw=true",
     "apk": "https://github.com/GTSMRepo/EpicTvApps/releases/download/hmm/com.stremio.one-1.10.4-31048580-armeabi-v7a.apk",
-    "category": "Utilities"
+    "category": "Media"
   },
   {
     "name": "Tizentube",
-    "description": "Youtube. Without Ads👀",
+    "description": "Youtube | Without Ads👀.",
     "version": "2.0.2",
     "size": "92.7 MB",
     "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0808.jpeg?raw=true",
     "apk": "https://github.com/reisxd/TizenTubeCobalt/releases/download/v2.0.2/cobalt-arm.apk",
-    "category": "Utilities"
+    "category": "Media"
+  },
+  {
+    "name": "Telelatino",
+    "description": "App de Pago | Porfavor contacte a un revendedor",
+    "version": "5.46.8",
+    "size": "34 MB",
+    "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0809.webp?raw=true",
+    "apk": "https://github.com/GTSMRepo/EpicTvApps/releases/download/hmm/TV.TL.apk",
+    "category": "Media"
   }
 ]
