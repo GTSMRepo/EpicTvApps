@@ -7,5 +7,23 @@
     "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0807.webp?raw=true",
     "apk": "https://github.com/GTSMRepo/EpicTvApps/releases/download/hmm/projectivy-launcher.apk",
     "category": "Utilities"
+  },
+  {
+    "name": "Stremio",
+    "description": "Freedom To Stream. https://guides.viren070.me/stremio",
+    "version": "1.10.4",
+    "size": "87.4 MB",
+    "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0806.png?raw=true",
+    "apk": "https://github.com/GTSMRepo/EpicTvApps/releases/download/hmm/com.stremio.one-1.10.4-31048580-armeabi-v7a.apk",
+    "category": "Utilities"
+  },
+  {
+    "name": "Tizentube",
+    "description": "Youtube. Without Ads👀",
+    "version": "2.0.2",
+    "size": "92.7 MB",
+    "icon": "https://github.com/GTSMRepo/EpicTvApps/blob/main/icons/IMG_0808.jpeg?raw=true",
+    "apk": "https://github.com/reisxd/TizenTubeCobalt/releases/download/v2.0.2/cobalt-arm.apk",
+    "category": "Utilities"
   }
 ]
